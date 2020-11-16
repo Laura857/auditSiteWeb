@@ -1,11 +1,4 @@
 {
-  "routes": [
-    {
-      "src": "/images/(.*)",
-      "headers": { "cache-control": "s-maxage=604800" },
-      "dest": "/images/$1"
-    }
-  ],
     "headers": [
       {
         "source": "/(.*)",
@@ -23,6 +16,11 @@
             "value" : "1; mode=block"
           }
         ]
+      },
+      {
+        "source": "/images/(.*)",
+        "headers": { "cache-control": "s-maxage=604800" },
+        "dest": "/images/$1"
       }
     ]
   }
