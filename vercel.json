@@ -2,7 +2,7 @@
     "headers": [
       
       {
-        "source": "/(.*)",
+        "source": "assets/(.*)",
         "headers" : [
           {
             "key" : "X-Content-Type-Options",
