@@ -1,16 +1,17 @@
 {
   "routes": [
     {
-      "src": ".chunk.css",
+      "src": ".*",
       "headers": {
-          "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable"
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY"
       },
       "continue": true
     },
     {
-      "src": ".chunk.js",
+      "src": "(.*).assests.(css|js)",
       "headers": {
-          "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable"
+        "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable"
       },
       "continue": true
     }
