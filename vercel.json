@@ -1,4 +1,5 @@
-"headers": [
+{
+    "headers": [
     {
       "source": "/images/(.*)",
       "headers" : [
