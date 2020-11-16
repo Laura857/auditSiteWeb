@@ -1,21 +1,27 @@
-{
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers" : [
-          {
-            "key" : "X-Content-Type-Options",
-            "value" : "nosniff"
-          },
-          {
-            "key" : "X-Frame-Options",
-            "value" : "DENY"
-          },
-          {
-            "key" : "X-XSS-Protection",
-            "value" : "1; mode=block"
-          }
-        ]
-      }
-    ]
-  }
+"headers": [
+    {
+      "source": "/images/(.*)",
+      "headers" : [
+       { "cache-control": "s-maxage=604800" },    
+      ],
+      "dest": "/images/$1"
+    },
+    {
+      "source": "/(.*)",
+      "headers" : [
+        {
+          "key" : "X-Content-Type-Options",
+          "value" : "nosniff"
+        },
+        {
+          "key" : "X-Frame-Options",
+          "value" : "DENY"
+        },
+        {
+          "key" : "X-XSS-Protection",
+          "value" : "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
