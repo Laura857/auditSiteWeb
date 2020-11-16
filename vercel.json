@@ -9,7 +9,7 @@
       "continue": true
     },
     {
-      "src": "(.*).assests.(css|js)",
+      "src": "(.*).chunck.(css|js)",
       "headers": {
         "Cache-Control": "public, max-age=31536000, s-maxage=31536000, immutable"
       },
