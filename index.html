@@ -8,7 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/122246146-383358083037993-7611301143656262981-n-188x92.png" type="image/x-icon">
   <meta name="description" content="">
+  <meta http-equiv="Content-Security-Policy" content="script-src https://apis.google.com;">
   
+  <httpProtocol> 
+    <customHeaders> 
+        <add name="X-Frame-Options" value="sameorigin"/> 
+    </customHeaders> 
+  </httpProtocol> 
   
   <title>Home</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -227,7 +233,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-md-12 map-wrapper">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNveGQ9bfpKFwWzQLLftrR9hNiHwdqQG8&amp;q=iim paris" allowfullscreen=""></iframe></div>
+                <div class="google-map"><iframe sandbox frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCNveGQ9bfpKFwWzQLLftrR9hNiHwdqQG8&amp;q=iim paris" allowfullscreen=""></iframe></div>
             </div>
             <div class="col-lg-6 my-auto pb-4 mbr-form" data-form-type="formoid">
                 <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="bRqAm7gyMgPxFKQfuHUwlAXP5SR0FAtEPanepIBf85lHOfpqn5EM+oj5t+pgz4Zw4zeZIk99h41TcJll+AQa1srTW+uJW/WXxxlT1nMFV6IJBq1J+otxMPlqJDlIxBt9">
